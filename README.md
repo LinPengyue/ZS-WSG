@@ -1,21 +1,33 @@
 
 # WS-ZSG  
-[[Paper][https://dl.acm.org/doi/abs/10.1145/3664647.3680897]] 
-[[openreview][https://openreview.net/pdf?id=dJstz3rQ2f]]  
-[[Conference][https://2024.acmmm.org/]]
+[![Paper](https://img.shields.io/badge/Paper-PDF-blue)](https://dl.acm.org/doi/abs/10.1145/3664647.3680897)
+[![OpenReview](https://img.shields.io/badge/OpenReview-PDF-orange)](https://openreview.net/pdf?id=dJstz3rQ2f)
+[![Conference](https://img.shields.io/badge/Conference-ACM_Multimedia_2024-red)](https://2024.acmmm.org/)
 
-> **Title**: Triple Alignment Strategies for Zero-shot Phrase Grounding under Weak Supervision
-> **Authors**: Lin, Pengyue and Li, Ruifan and Ji, Yuzhe and Yu, Zhihan and Feng, Fangxiang and Ma, Zhanyu and Wang, Xiaojie  
-> **Affiliation**: Beijing University of Posts and Telecommnuciations  
-> **Conference**: ACM Multimedia 2024 
+> **Title**: Triple Alignment Strategies for Zero-shot Phrase Grounding under Weak Supervision  
+> **Authors**: Pengyue Lin, Ruifan Li, Yuzhe Ji, Zhihan Yu, Fangxiang Feng, Zhanyu Ma, Xiaojie Wang  
+> **Affiliation**: Beijing University of Posts and Telecommunications  
+> **Conference**: ACM Multimedia 2024 (Full Paper, pp. 4312–4321)
+
+## 📄 Abstract
+
+Phrase grounding (PG) aims to localize objects referred to by noun phrases in an image. Recent works have explored either weakly supervised PG (without region-level annotations) or zero-shot PG (generalizing from seen to unseen categories). However, both settings have limitations in real-world applications due to scarce annotations and limited category coverage during training.
+
+In this paper, we propose **WS-ZSG**, a novel framework for **Zero-shot Phrase Grounding under Weak Supervision**. Our approach is built upon three key alignment strategies:
+
+1. **Region-Text Alignment (RTA)**: Leverages CLIP to establish region-level attribute associations between image regions and text descriptions.
+2. **Domain Alignment (DomA)**: Minimizes the distributional gap between seen classes in training data and those from pre-training domains.
+3. **Category Alignment (CatA)**: Integrates category semantics and region-category relationships to enhance generalization to unseen categories.
+
+Extensive experiments demonstrate that our method outperforms existing zero-shot approaches and achieves competitive performance compared to fully and weakly supervised methods. The code and data will be made publicly available after the double-blind review phase.
 
 
-Abstract:
 
-Phrase grounding, i.e., PG aims to locate objects referred by noun phrases. Recently, PG under weak supervision (i.e., grounding without region-level annotations) and zero-shot PG (i.e., grounding from seen categories to unseen ones) are proposed, respectively. However, for real-world applications these two approaches are limited due to slight annotations and numerable categories during training. In this paper, we propose a framework of zero-shot PG under weak supervision. Specifically, our PG framework is built on triple alignment strategies. Firstly, we propose a region-text alignment (RTA) strategy to build region-level attribute associations via CLIP. Secondly, we propose  a domain alignment (DomA) strategy by minimizing the difference between distributions of seen classes in the training and those of the pre-training. Thirdly, we propose a category alignment (CatA) strategy by considering both category semantics and region-category relations. Extensive experiment results show that our proposed PG framework outperforms previous zero-shot  methods and achieves competitive performance  compared with existing weakly-supervised methods. The code and data will be publicly available at GitHub after double-blind phase. 
+## 📚 Citation
 
-Citation:
+If you find this work helpful, please cite our paper:
 
+```bibtex
 @inproceedings{lin2024triple,
   title={Triple alignment strategies for zero-shot phrase grounding under weak supervision},
   author={Lin, Pengyue and Li, Ruifan and Ji, Yuzhe and Yu, Zhihan and Feng, Fangxiang and Ma, Zhanyu and Wang, Xiaojie},
@@ -23,7 +35,10 @@ Citation:
   pages={4312--4321},
   year={2024}
 }
+```
 
-Licence:
+## 📄 License
 
 This project is released under the [MIT License](LICENSE).
+
+
