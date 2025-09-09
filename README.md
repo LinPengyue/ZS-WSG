@@ -1,7 +1,7 @@
 
-# [WS-ZSG]  
-[![Paper]([https://dl.acm.org/doi/abs/10.1145/3664647.3680897])] 
-[![openreview]([https://openreview.net/pdf?id=dJstz3rQ2f])]  
+# WS-ZSG  
+[![Paper][https://dl.acm.org/doi/abs/10.1145/3664647.3680897]] 
+[![openreview][https://openreview.net/pdf?id=dJstz3rQ2f]]  
 [![Conference](https://2024.acmmm.org/)]
 
 > **Title**: Triple Alignment Strategies for Zero-shot Phrase Grounding under Weak Supervision
